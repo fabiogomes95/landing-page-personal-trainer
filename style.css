@@ -96,18 +96,20 @@ button:hover {
 }
 
 #sobre {
-    /* Gradiente: começa no preto absoluto, passa por um vermelho escuro e termina no dourado */
-    background: linear-gradient(135deg, #111111 40%, #5c1a06 80%, #F2A900 100%);
+    /* O gradiente escuro fica por cima da imagem, escurecendo a arte para o texto brilhar */
+    background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.8)), url('sanji.jpg');
     
-    /* Reduzi o padding lateral de 60px para 20px para a caixa não ficar espremida no celular */
-    padding: 120px 20px; 
+    /* Regras de dimensionamento */
+    background-size: cover;
     
-    /* Garante que a caixa de texto fique perfeitamente centralizada */
+    /* Aqui está o segredo para o celular: ancora a imagem no topo/centro */
+    background-position: top center;
+    
+    padding: 150px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .depoimentos-grid {
     display: flex;
     gap: 20px;
