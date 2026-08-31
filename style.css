@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.content-wrapper h1, .content-wrapper p {
+    color: #fff;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(17, 17, 17, 0.85); 
+    padding: 30px;
+    border-radius: 8px;
+    border-bottom: 4px solid #F2A900;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+li {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.info-extra {
+    max-height: 0; /* Esmaga o elemento para não ocupar espaço */
+    opacity: 0; /* Deixa invisível */
+    overflow: hidden; /* Corta qualquer texto que tentar vazar da caixa */
+    transition: all 0.4s ease; /* Cria a animação de abertura suave */
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 0;
+}
+
+li:hover .info-extra {
+    max-height: 150px; /* Abre espaço suficiente para o texto */
+    opacity: 1; /* Revela o texto */
+    margin-top: 15px; /* Dá um respiro entre o título e a descrição */
+}
+li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid #F2A900;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+}
+
+button {
+        background-color: #F2A900;
+        color: #111111; 
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: none;
+}
+
+button:hover {
+        background-color: #d49400; 
+}
+
+#sobre {
+    background-image: url('sanji.jpg');
+    padding: 150px 60px;
+    background-size: cover;
+    background-position: center;
+}
+
+.depoimentos-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-depoimento {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.card-depoimento h4 {
+    margin-top: 15px;
+    color: #004d80; 
+    font-style: normal;
+}
+
+#informacoes {
+    background-color: #111111; 
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 5px solid #F2A900; 
+}
+
+#informacoes a {
+    color: #F2A900; 
+    text-decoration: none; 
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#informacoes a:hover {
+    color: #ffffff; 
+}
