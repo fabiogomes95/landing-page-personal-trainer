@@ -96,10 +96,16 @@ button:hover {
 }
 
 #sobre {
-    background-image: url('sanji.jpg');
-    padding: 150px 60px;
-    background-size: cover;
-    background-position: center;
+    /* Gradiente: começa no preto absoluto, passa por um vermelho escuro e termina no dourado */
+    background: linear-gradient(135deg, #111111 40%, #5c1a06 80%, #F2A900 100%);
+    
+    /* Reduzi o padding lateral de 60px para 20px para a caixa não ficar espremida no celular */
+    padding: 120px 20px; 
+    
+    /* Garante que a caixa de texto fique perfeitamente centralizada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .depoimentos-grid {
