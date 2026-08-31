@@ -50,9 +50,9 @@ li {
     border-bottom: 3px solid transparent;
 }
 .info-extra {
-    max-height: 0; /* Esmaga o elemento para não ocupar espaço */
+    max-height: 0; 
     opacity: 0; /* Deixa invisível */
-    overflow: hidden; /* Corta qualquer texto que tentar vazar da caixa */
+    overflow: hidden;
     transition: all 0.4s ease; /* Cria a animação de abertura suave */
     font-size: 0.9em;
     color: #555;
@@ -62,7 +62,7 @@ li {
 li:hover .info-extra {
     max-height: 150px; /* Abre espaço suficiente para o texto */
     opacity: 1; /* Revela o texto */
-    margin-top: 15px; /* Dá um respiro entre o título e a descrição */
+    margin-top: 15px; 
 }
 li:hover {
     transform: translateY(-8px);
@@ -96,15 +96,9 @@ button:hover {
 }
 
 #sobre {
-    /* O gradiente escuro fica por cima da imagem, escurecendo a arte para o texto brilhar */
-    background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.8)), url('sanji.jpg');
-    
-    /* Regras de dimensionamento */
+    background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.8)), url('sanji.png');
     background-size: cover;
-    
-    /* Aqui está o segredo para o celular: ancora a imagem no topo/centro */
     background-position: top center;
-    
     padding: 150px 20px;
     display: flex;
     justify-content: center;
